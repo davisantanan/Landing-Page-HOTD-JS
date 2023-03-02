@@ -1,0 +1,67 @@
+@media (max-width: 1200px) {
+    body {
+        background-color: black;
+    }
+
+    .background-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner {
+        height: 38%;
+        margin-top: 50px;
+    }
+
+    .text-contain {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 630px) {
+    header, .logo-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    ul {
+        justify-content: center;
+    }
+
+    #img-title {
+        max-width: 75%;
+    }
+
+    .description {
+        max-width: 80%;
+    }
+
+    .modal-close {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal-video {
+        width: 310px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 376px) {
+    .modal-video {
+        width: 250px;
+        height: 140px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+}

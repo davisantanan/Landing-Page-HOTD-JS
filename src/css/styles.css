@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+
+body {
+    font-family: 'Poppins';
+}
+
+header {
+    display: flex;
+    justify-content: space-between;    
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+li {
+    font-weight: bold;
+    color: white;   
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+li:hover {
+    background-color: #944a00;
+}
+
+.container {
+    max-width: 1440px;
+    height: calc(100vh - 118px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 30px;
+}
+
+#img-title {
+    max-width: 500px;
+}
+
+.description {
+    color: white;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.button-trailer {
+    background-color: #944a00;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s all ease-in-out;
+    border-radius: 8px;
+}
+
+.button-trailer:hover {
+    transform: scale(1.1);
+}
+
+#banner {
+    height: 550px;
+}
+
+.background-video { 
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    height: 100vh;
+    width: 100%;
+}
+
+.background-video::after {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,50,50,.749);
+    visibility: hidden;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+    transition: .2s;
+}
+
+.button-modal:hover {
+    background-color: rgb(206, 206, 206);
+    transform: scale(1.1);
+}
+
+.button-modal {
+    background-color: white;
+    color: #f03a17;
+    font-weight: bold;
+    font-size: 18px;
+    width: 40px;
+    height: 23px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    align-items: center;
+    padding: 2px;
+}
+
+iframe {
+    width: 640px;
+    height: 360px;
+}
+
+.open {
+    opacity: 1;
+    visibility: visible;
+}
